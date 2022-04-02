@@ -1,7 +1,7 @@
 # Description:
 # Iterates over every single byte inside the file and applys a bit mask to flip the last bit in the byte. Run it again to reverse the process.
 
-$SourceFile = "./boxicons.eot.txt"
+$SourceFile = "./test.txt"
 $beforeFileHash = (Get-FileHash $SourceFile).Hash
 $SourceBytes = [System.IO.File]::ReadAllBytes($SourceFile)
 
